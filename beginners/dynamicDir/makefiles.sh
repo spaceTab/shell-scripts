@@ -1,0 +1,1 @@
+mkdir rc{file1, file2, file3, S}.d
