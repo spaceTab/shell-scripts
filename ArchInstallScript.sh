@@ -3,7 +3,7 @@
 # set default to use the fastest mirrors
 
 zsh
-
+####
 sudo pacman-mirrors -g
 
 # update
