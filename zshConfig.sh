@@ -29,14 +29,14 @@ alias rmOrphans='sudo pacman -Rsun $(pacman -Qqdt)'
 alias shufStr='shuf -n 1 -e'
 
 # SCRIPTS & APPLICATIONS
-alias SH='~/Documents/Programming/shell-scripts' 
-alias PROJ='~/Documents/Programming/Projects' 
+alias SH='~/Programming/shell-scripts' 
+alias PROJ='~/Programming/Projects' 
 alias rl='~/Applications ; ./RuneLite.AppImage & ; disown ./RuneLite; cd "$OLDPWD"'
 alias MEGA='~/Applications ; ./megasync & ; disown ./megasync ; cd "$OLDPWD"'
-alias convert='~/Documents/Programming/shell-shell-scripts/convertRename.sh'
+alias convert='~/Programming/shell-shell-scripts/convertRename.sh'
 
 # SHORTCUTS TO DIRECTORIES
-alias pro='~/Documents/Programming' 
+alias pro='~/Programming' 
 alias PIC='~/Pictures' 
 alias docs='~/Documents'
 alias dl='~/Downloads'
@@ -67,14 +67,14 @@ chpwd() ls
 
 
 # SHELL DISPLAYER
-echo -e "\n\n"
-echo -e "\t $USER // Manjaro"
-echo -e "\t WM: $XDG_CURRENT_DESKTOP"
-echo -e "\t $(uptime -p)"
-echo -e "\t Packages: $(pacman -Q | wc -l)"
-echo -e "\t Kernel: $(uname -r)"
-echo -e "\t Shell: $SHELL"
-echo -e "\t $(date) \n"
+#echo -e "\n\n"
+#echo -e "\t $USER // Manjaro"
+#echo -e "\t WM: $XDG_CURRENT_DESKTOP"
+#echo -e "\t $(uptime -p)"
+#echo -e "\t Packages: $(pacman -Q | wc -l)"
+#echo -e "\t Kernel: $(uname -r)"
+#echo -e "\t Shell: $SHELL"
+#echo -e "\t $(date) \n"
 
 # COLORED MANPAGES
 export LESS_TERMCAP_mb=$'\E[01;31m'
