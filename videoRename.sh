@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 #Small command to mass rename videos in a file for referance
 

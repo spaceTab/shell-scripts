@@ -3,12 +3,13 @@
 NOW=$(date +"%m-%d-%Y %r") export NOW # GET DATE
 
 # MY ALIASES
-alias cb='cd ..' 
-alias cb.='cd ...'
-alias lsa='ls -a' 
-alias nv='nvim'
-alias svim='sudo nvim'
-alias pac='sudo pacman'
+alias \
+ cb='cd ..' \ 
+ cb.='cd ...' \
+ lsa='ls -a' \ 
+ nv='nvim' \
+ svim='sudo nvim' \
+ pac='sudo pacman' \ 
 
 #Pac command to remove packages, and dependancies unless used by other APPLICATIONS
 alias pacrmv='sudo pacman -Rs'

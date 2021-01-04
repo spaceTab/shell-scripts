@@ -3,14 +3,16 @@
 
 array[0]="spaceinvaders"
 array[1]="colorwheel"
-array[2]="mouseface"
+array[2]="pfetch"
 array[3]="darthvader"
 array[4]="elfman"
-array[5]="bonsai-tree"
-array[6]="dog"
+array[5]="bonsai-tree -L 19"
+#array[6]="dog"
 array[7]="unix"
-array[8]="illumina"
-array[9]="dna"
+array[8]="monster"
+array[9]="dna | lolcat"
+array[10]="pfetch"
+
 size=${#array[@]}
 index=$(($RANDOM % size))
 

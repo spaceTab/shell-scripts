@@ -22,4 +22,4 @@ ps $PsArgs${Args} |
     awk "\$$TimeCol ~ /^[a-zA-Z][a-z][a-z]/" |
     sort
 
-    echo "$PsArgs${Args}"
+    echo "$PsArgs${Args}"h
