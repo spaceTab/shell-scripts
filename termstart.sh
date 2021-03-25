@@ -16,10 +16,10 @@
 array[0]="pfetch"
 array[1]="elfman"
 array[2]="bonsai-tree -L 17"
-#array[3]="kitty +kitten icat --place 20x10@0x0 /home/pg/Pictures/qts/artsy.jpg \n \n \n \n"
+array[3]="alpha"
 
 size=${#array[@]}
 index=$(($RANDOM % size))
 
-${array[$index]} #| lolcat
+${array[$index]} 
 

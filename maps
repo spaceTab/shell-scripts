@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+import os
+import sys
+
+os.system("command")
+
+country = sys.argv[1]     # Allows for argument to be added after running ./maps.py africa
+
+def load_map(country):
+
+    if country == "middle-east":                  # MIDDLE EAST
+        os.system("feh ~/Pictures/worldmaps/middle-east-map.gif")
+
+    elif country == "africa":                     # AFRICA 
+        os.system("feh ~/Pictures/worldmaps/map-of-africa.png")
+
+    elif country == "easia":                      # ASIA 
+        os.system("feh ~/Pictures/worldmaps/map-of-east-asia.png")
+
+    elif country == "casia":                      # CENTRAL ASIA
+        os.system("feh ~/Pictures/worldmaps/map-of-central-asia.png")
+        
+    elif country =="sasia":                       # SOUTH ASIA
+        os.system("feh ~/Pictures/worldmaps/map-of-south-asia.png")
+
+    elif country == "south-america":              # SOUTH AMERICA
+        os.system("feh ~/Pictures/worldmaps/map-of-south-america.gif")
+
+    elif country == "europe":                     # EUROPE
+        os.system("feh ~/Pictures/worldmaps/map-of-europe.png")
+
+    elif country == "world":                      # THE WORLD 
+        os.system("feh ~/Pictures/worldmaps/WorldMap.png")
+
+    elif country == "uk":                         # UNITED KINGDOM
+        os.system("feh ~/Pictures/worldmaps/map-of-uk.png")
+
+    elif country == "scand":                      # SCANDINAVIA
+        os.system("feh ~/Pictures/worldmaps/map-of-scandinavia.png")
+
+load_map(country)
+
+
+#to run in rofi create a symlink to /usr/bin/
+# "sudo ln -s /home/username/.bin/file /usr/bin"
