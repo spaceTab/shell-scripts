@@ -1,0 +1,7 @@
+installation:
+    1. execute in this directory as regular user:
+        $ plasmapkg --type kwinscript -i .
+    2. create custom shortcut with this command:
+        qdbus org.kde.KWin /Scripting loadScript ~/.kde4/share/apps/kwin/scripts/quickTileToCenter/contents/code/main.js; qdbus org.kde.KWin /Scripting start
+       Path to main.js can differ on your system, check it!
+

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Quick tile window to the center
+Comment=Similar to quick tiling to left / right, but places window in the middle of screen, width is changed to half of screen width if it was less.
+
+Type=Service
+
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/main.js
+
+X-KDE-PluginInfo-Author=qwe12421
+X-KDE-PluginInfo-Email=qwertyuiop231571@gmail.com
+X-KDE-PluginInfo-Name=quickTileToCenter
+X-KDE-PluginInfo-Version=1.3
+
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-ServiceTypes=KWin/Script

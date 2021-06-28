@@ -13,10 +13,14 @@
 #array[9]="dna | lolcat"
 #array[10]="pfetch"
 
-array[0]="pfetch"
+array[0]="pfetch \n"
 array[1]="elfman"
 array[2]="bonsai-tree -L 17"
 array[3]="alpha"
+array[4]="nerdfetch \n"
+array[5]="owofetch"
+array[6]="uwufetch"
+array[7]="sfetch"
 
 size=${#array[@]}
 index=$(($RANDOM % size))
