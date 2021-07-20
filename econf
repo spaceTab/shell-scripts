@@ -1,0 +1,53 @@
+#!/bin/env bash
+
+function ChooseConfig {
+	echo "What configuration file would you like to edit"
+	read CONF
+
+	case_start=$(("$LINENO" + 6)) #store line no. of start
+
+	case $CONF in
+		kitty)
+			nvim ~/.config/kitty/
+			;;
+		picom)
+			nvim ~/.config/picom.conf
+			;;
+		openbox | OB)
+			nvim ~/.config/openbox/
+			;;
+		tint2)
+			nvim ~/.config/tint2/
+			;;
+		zsh)
+			nvim ~/.zshrc-personal
+			;;
+		neovim | nvim | nv)
+			nvim ~/.config/nvim/
+			;;
+		theme | ob-theme)
+			curr_theme="$(cat ~/.config/openbox/rc.xml | awk '/<theme>/ {while (getline n) {if (match(n, /<name>/))
+			{l=n; exit}}} END {split(l, a, "[<>]"); print a[3]}')"
+			
+			sudoedit /usr/share/themes/$curr_theme/openbox-3/themerc
+			;;
+		sddm)
+			sudoedit /usr/share/sddm/themes/arcolinux-sugar-candy/theme.conf
+			;;
+		*)
+			echo -n "Unknown match  -->  "
+			;;
+	esac
+
+	case_end=$(("$LINENO" - 6)) # store line # at the end
+
+	# - take lines between $case_start and $case_end
+	# - replace newlines with spaces
+	# - replace ";;" with newlines
+	# -=> now every case statement should be on its own line
+	# - then filter out cases: delete everything after the first ")" including the ")" and trim blanks
+	cases_available=`sed -n "${case_start},${case_end}p" $0 | sed 's/#.*//' | tr '\n' ' ' | sed 's/;;/\n/g' | sed 's/).*//;s/[[:blank:]]*//'`
+	echo -e "cases_available:\n\n$cases_available"
+	echo $wm_theme
+}
+ChooseConfig
