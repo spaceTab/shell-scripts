@@ -29,10 +29,10 @@ function ChooseConfig {
 			curr_theme="$(cat ~/.config/openbox/rc.xml | awk '/<theme>/ {while (getline n) {if (match(n, /<name>/))
 			{l=n; exit}}} END {split(l, a, "[<>]"); print a[3]}')"
 			
-			sudoedit /usr/share/themes/$curr_theme/openbox-3/themerc
+			sudo -e /usr/share/themes/$curr_theme/openbox-3/themerc
 			;;
 		sddm)
-			sudoedit /usr/share/sddm/themes/arcolinux-sugar-candy/theme.conf
+			sudo -e /usr/share/sddm/themes/arcolinux-sugar-candy/theme.conf
 			;;
 		*)
 			echo -n "Unknown match  -->  "
