@@ -13,13 +13,13 @@ function ChooseConfig {
 		picom)
 			nvim ~/.config/picom.conf
 			;;
-		openbox | OB)
+		openbox | OB | ob)
 			nvim ~/.config/openbox/
 			;;
-		tint2)
+		tint2 | tint)
 			nvim ~/.config/tint2/
 			;;
-		zsh)
+		zsh | zrc)
 			nvim ~/.zshrc-personal
 			;;
 		neovim | nvim | nv)
@@ -31,7 +31,7 @@ function ChooseConfig {
 			
 			sudo -e /usr/share/themes/$curr_theme/openbox-3/themerc
 			;;
-		sddm)
+		sddm | dm)
 			sudo -e /usr/share/sddm/themes/arcolinux-sugar-candy/theme.conf
 			;;
 		*)
